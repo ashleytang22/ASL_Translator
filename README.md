@@ -34,7 +34,7 @@ Result: 5000+ images of hand signs
 ### Deploying onto Hardware
 1. Replace the gmodel in the model.h file of this repo with your custom model in the .cc file you just created
     * don't forget to change the model length according to your custom model! 
-    *[Model.h](src/model.h)
+    * [Model.h](src/model.h)
 2. Change the model definition in NeuralNetwork.cpp according to your custom model
-    *[NeuralNetwork.cpp](src/NeuralNetwork.cpp)
+    * [NeuralNetwork.cpp](src/NeuralNetwork.cpp)
 3. Upload the model onto your board and view the output using the serial monitor!
