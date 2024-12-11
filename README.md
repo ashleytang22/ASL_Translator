@@ -28,10 +28,13 @@ Result: 5000+ images of hand signs
 2. Train the model
 3. Test the model accuracy using the test dataset
 4. Quantize the model
+    * note: pay attention to the size of your quantized model and how much Flash and RAM memory you have on your board! 
 5. Convert the quantized model into a .cc file
 
 ### Deploying onto Hardware
 1. Replace the gmodel in the model.h file of this repo with your custom model in the .cc file you just created
     * don't forget to change the model length according to your custom model! 
+    *[Model.h](src/model.h)
 2. Change the model definition in NeuralNetwork.cpp according to your custom model
-3. Upload the model onto your board and view the output using the serial monitor! 
+    *[NeuralNetwork.cpp](src/NeuralNetwork.cpp)
+3. Upload the model onto your board and view the output using the serial monitor!
